@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Dalvi Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2, h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        /* Profile Section (Home Screen) */
+        #profile {
+            background: linear-gradient(135deg, #fff, #e0f7fa);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #profile p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn-color-1 {
+            background-color: #00aaff;
+            color: white;
+        }
+
+        .btn-color-2 {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Social Media Icons */
+        #socials-container a {
+            margin: 10px;
+            color: #333;
+            font-size: 2em;
+            transition: color 0.3s ease;
+        }
+        
+
+        /* About Section */
+        #about {
+            background-color: #f1f8e9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #e0f7fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .skill {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .skill i {
+            font-size: 3em;
+            color: #00aaff;
+            margin-bottom: 15px;
+        }
+
+        .skill h3 {
+            font-size: 1.4em;
+            color: #555;
+        }
+
+        /* Experience Section */
+        #experience {
+            background-color: #fce4ec;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .timeline-item {
+            background-color: #fff;
+            padding: 20px;
+            border-left: 5px solid #ff4081;
+            width: 80%;
+            margin: 0 auto 30px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contact a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Arrows */
+        .arrow {
+            position: fixed;
+            font-size: 1.5em;
+            color: #00aaff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow-up {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .arrow-down {
+            bottom: 80px;
+            right: 20px;
+        }
+
+        .arrow:hover {
+            background-color: #00aaff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header id="top">
+    <h1>Aniket Dalvi</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home Screen (Profile Section) -->
+<section id="profile">
+    <div class="container">
+        <img src="./profile-pic.jpeg" alt="Aniket Chandrakant Dalvi profile picture">
+        <p>Hello, I'm Aniket Chandrakant Dalvi</p>
+        <p class="typing-effect">
+            <span id="typing-text">A dedicated IT Engineer with a passion for driving seamless network operations and managing IT infrastructures.</span>
+        </p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="location.href='https://drive.google.com/file/d/1w6oL7q6Og1Ha1df3hpHAU7rstq1iywM1/view?usp=sharing'">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <a href="https://www.linkedin.com/in/aniket-dalvi-51a6562b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/I-am-Aniket-Dalvi" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h1>About Me</h1>
+    <p>Experienced IT Engineer specializing in managing complex IT infrastructures, driving seamless network operations, and implementing security measures.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h1>Skills & Technologies</h1>
+    <div class="skill">
+        <i class="fas fa-server"></i>
+        <h3>Operating Systems</h3>
+        <p>Windows Server, Mac OS, Ubuntu</p>
+    </div>
+    <div class="skill">
+        <i class="fas fa-network-wired"></i>
+        <h3>Network Security</h3>
+        <p>Fortinet Firewall, Sophos Firewall</p>
+    </div>
+    <div class="skill">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Services</h3>
+        <p>AWS, Google Cloud</p>
+    </div>
+    <div class="skill">
+        <i class="fas fa-cogs"></i>
+        <h3>Virtualization</h3>
+        <p>VMware, Hyper-V</p>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <h1>Work Experience</h1>
+    <div class="timeline-item">
+        <h3>IT Manager</h3>
+        <span>YMS Consulting Engineers | Sep 2021 - Present</span>
+        <p>Managing IT infrastructure, troubleshooting network issues, and implementing firewall solutions to optimize security protocols.</p>
+    </div>
+    <div class="timeline-item">
+        <h3>IT Support Engineer</h3>
+        <span>Megha Compusoft | Feb 2019 - Aug 2021</span>
+        <p>Installed and configured VMware and Microsoft Virtual PC, providing multi-user hardware and software support.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to get in touch, feel free to reach me via email or phone.</p>
+    <p>Email: <a href="mailto:aniketd741@gmail.com">aniketd741@gmail.com</a></p>
+    <p>Phone: +91 8830105103</p>
+</section>
+
+<!-- Up Arrow -->
+<a href="#top" class="arrow arrow-up"><i class="fas fa-arrow-up"></i></a>
+
+<!-- Down Arrow -->
+<a href="#profile" class="arrow arrow-down"><i class="fas fa-arrow-down"></i></a>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
